@@ -1,38 +1,1179 @@
-.App {
+/* NAVBAR */
+nav a,
+nav .navbar-toggler,
+nav .collapse {
+  color: #FFFFFF !important;
+  z-index: 2;
+}
+
+
+.navbar.fixed-top.scrolled {
+  background-color: rgba(9, 20, 39, 0.80) !important;
+}
+
+.nav-link {
+  color: #FFFFFFB2 !important;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: white !important;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: #F8E7A1;
+}
+
+/* CSS untuk mengubah tampilan navbar link ketika aktif */
+.nav-link.active {
+  color: white !important;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: #F8E7A1;
+}
+
+.navbar-brand img {
+  width: 143px;
+  height: 48px;
+}
+
+/* END NAVBAR */
+
+/* HEADER */
+.right {
+  fill: linear-gradient(180deg, rgba(47, 69, 188, 0.90) 0%, rgba(47, 188, 188, 0.00) 100%);
+  filter: blur(60px);
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  flex-shrink: 0;
+}
+
+.header {
+  z-index: 1;
+  padding-top: 93px;
+}
+
+.fsd-text {
+  color: #868490;
+  font-size: 35px;
+  line-height: normal;
+}
+
+.name-text-container {
+  padding-bottom: 100px;
+}
+
+.name-text {
+  position: absolute;
+  font-size: 60px;
+  line-height: normal;
+  display: flex;
+}
+
+.line-height {
+  width: 183px;
+  height: 8px;
+  flex-shrink: 0;
+  background: #F8E7A1;
+}
+
+.desc-text {
+  color: #868490;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.my-img {
+  width: 510px;
+  height: 727px;
+  background: linear-gradient(90deg, rgba(4, 17, 38, 0.25) 0%, rgba(6, 25, 44, 0.25) 100%);
+}
+
+.header-right {
+  text-align: right;
+  font-size: 24px;
+  line-height: normal;
+  color: #868490;
+}
+
+.header-right-bottom {
+  text-align: right;
+  color: #FFF;
+  font-size: 72px;
+  line-height: normal;
+  animation: fadeIn 15s infinite;
+  -webkit-animation: fadeIn 1s infinite;
+  -moz-animation: fadeIn 1s infinite;
+  -o-animation: fadeIn 1s infinite;
+  -ms-animation: fadeIn 1s infinite;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.lets-talk {
+  color: #F8E7A1;
+  font-size: 20px;
+  line-height: normal;
+  text-decoration: none;
+}
+
+/* END HEADER */
+
+
+/* MAIN */
+/* SLIDER */
+.left {
+  fill: #4F349F;
+  filter: blur(50px);
+  position: absolute;
+  left: 0;
+  top: -300px;
+  z-index: -999999;
+  flex-shrink: 0;
+}
+
+.slider {
+  display: inline-flex;
+  height: 200px;
+  margin-top: 135px;
+  padding: 30px 0px 0px;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  gap: 60px;
+  background: rgba(9, 20, 39, 0.60);
+  backdrop-filter: blur(4px);
+  position: relative;
+}
+
+.owl-centered .owl-wrapper {
+  display: table !important;
+}
+
+.owl-centered .owl-item {
+  display: table-cell;
+  float: none;
+  vertical-align: middle;
+}
+
+.owl-centered .owl-item div {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Feel free to change duration  */
+.animated {
+  -webkit-animation-duration: 1000 ms;
+  animation-duration: 1000 ms;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* .owl-animated-out - only for current item */
+/* This is very important class. Use z-index if you want move Out item above In item */
+.owl-animated-out {
+  z-index: 1
+}
+
+/* .owl-animated-in - only for upcoming item
+/* This is very important class. Use z-index if you want move In item above Out item */
+.owl-animated-in {
+  z-index: 0
+}
+
+/* .fadeOut is style taken from Animation.css and this is how it looks in owl.carousel.css:  */
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
   }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* END SLIDER */
+
+/* SERVICES */
+.services {
+  margin-top: 135px;
+  z-index: 1;
+}
+
+.title-services {
+  font-size: 62px;
+  line-height: normal;
+}
+
+.card-service {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(9, 20, 39, 0.80);
+  backdrop-filter: blur(4.5px);
+  padding: 35px 0px 35px 35px;
+}
+
+.card-title {
+  color: #FFF;
+  font-size: 40px;
+  line-height: normal;
+}
+
+.card-text {
+  color: #868490;
+  font-size: 24px;
+  line-height: normal;
+}
+
+/* END SERVICES */
+
+/* PORTOFOLIO */
+.my-portofolio {
+  margin-top: 118px;
+  padding: 40px 40px 10px 40px;
+  border-radius: 6px;
+  background: rgba(9, 20, 39, 0.60);
+  backdrop-filter: blur(2px);
+  z-index: 1;
+}
+
+.title-portofolio {
+  font-size: 62px;
+  line-height: normal;
+}
+
+.see-all {
+  color: #F8E7A1;
+  font-size: 20px;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.right2 {
+  fill: linear-gradient(233deg, #8B3D4C 0%, rgba(79, 52, 159, 0.00) 100%);
+  filter: blur(60px);
+  position: absolute;
+  right: 0;
+  z-index: -999999;
+  flex-shrink: 0;
+  margin-top: -400px;
+}
+
+.portofolio-box {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: #fff;
+  border-radius: 0px 0px 12px 12px;
+  background: rgba(16, 27, 46, 0.30);
+  backdrop-filter: blur(4px);
+  margin-bottom: 3rem;
+}
+
+.portofolio-box:hover img {
+  transform: scale(1.2);
+}
+
+.portofolio-img {
+  display: block;
+  overflow: hidden;
+  border-radius: 12px 12px 0px 0px;
+}
+
+.portofolio-img img {
+  transition: all 1s;
+}
+
+.portofolio-content {
+  padding: 20px 3% 20px 4%;
+}
+
+.portofolio-content .p-more {
+  font-size: 0.8rem;
+  color: #868490;
+}
+
+.portofolio-content .p-more .p-ctegory {
+  color: #868490;
+}
+
+.portofolio-content .p-like {
+  font-size: 2rem;
+  color: #F8E7A1;
+  float: right;
+}
+
+.portofolio-content .p-like a {
+  color: #F8E7A1;
+}
+
+.p-title {
+  font-size: 24px;
+  color: #FFF;
+}
+
+/* END PORTOFOLIO */
+
+
+/* CERTIFICATE */
+
+.certificate {
+  z-index: 1;
+  padding-top: 100px;
+}
+
+.title-certificate {
+  font-size: 62px;
+  line-height: normal;
+}
+
+.line-mf {
+  width: 183px;
+  height: 8px;
+  background-color: #F8E7A1;
+  margin: 0 auto;
+}
+
+.cert-box {
+  transition: all 0.2s;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 3rem;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 12px 12px 0px 0px;
+}
+
+.card-inner {
+  width: inherit;
+  height: inherit;
+  background: rgba(255, 255, 255, .05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  padding: 10px;
+  border-radius: 0px 0px 12px 12px;
+}
+
+.cert-box:hover {
+  transform: scale(1.04);
+}
+
+.cert-box:hover img {
+  transform: scale(1.3);
+}
+
+.cert-img {
+  display: block;
+  overflow: hidden;
+  border-radius: 12px 12px 0px 0px;
+}
+
+.cert-img img {
+  transition: all 1s;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  z-index: -99999;
+  background: radial-gradient(#F8E7A1, #F8E7A1);
+  border-radius: 50%;
+  position: absolute;
+  animation: move-up6 2s ease-in infinite alternate-reverse;
+}
+
+.circle:nth-child(1) {
+  top: -25px;
+  left: -25px;
+  z-index: -99999;
+}
+
+.circle:nth-child(2) {
+  bottom: -25px;
+  right: -25px;
+  z-index: -99999;
+  animation-name: move-down1;
+}
+
+@keyframes move-up6 {
   to {
-    transform: rotate(360deg);
+    transform: translateY(-10px);
   }
+}
+
+@keyframes move-down1 {
+  to {
+    transform: translateY(10px);
+  }
+}
+
+/* END CERTIFICATE */
+
+/* CONTACT */
+.contact {
+  padding-top: 120px;
+  z-index: 1;
+}
+
+.left2 {
+  fill: #4F349F;
+  filter: blur(50px);
+  position: absolute;
+  left: 0;
+  z-index: -999999;
+}
+
+.title-contact {
+  font-size: 62px;
+  line-height: normal;
+  padding-bottom: 70px;
+}
+
+.span-underline {
+  display: inline-block;
+  border-bottom: 1px solid #F8E7A1;
+  padding-bottom: 2px;
+}
+
+.contact-me {
+  color: #F8E7A1;
+  font-size: 20px;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.img-contact {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 512px;
+  height: 591px;
+  background: linear-gradient(0deg, rgba(3, 14, 33, 0.08) 0%, rgba(3, 14, 33, 0.08) 100%),
+    url('./assets/images/img-contact.png'),
+    lightgray 0px -66.354px / 100% 110.433% no-repeat;
+}
+
+/* END CONTACT */
+
+/* FOOTER */
+.footer {
+  position: absolute;
+  margin-top: 124px;
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+  padding: 25px 0;
+  background: #091427;
+  height: 190px;
+}
+
+.connect-text {
+  font-size: 24px;
+  line-height: normal;
+}
+
+.flex-icon {
+  gap: 40px;
+  padding-bottom: 20px;
+}
+
+.flex-icon a {
+  text-decoration: none;
+}
+
+.copyright {
+  margin-bottom: 0.3rem;
+}
+
+.credits {
+  margin-bottom: 0;
+}
+
+.credits a {
+  color: #fff;
+}
+
+/* END FOOTER */
+
+
+/* Smartphone */
+@media (max-width: 575.98px) {
+
+  /* Gaya CSS untuk tampilan pada layar lebar maksimal 575px (misalnya smartphone dalam posisi potrait) */
+  .header {
+    padding-top: 30px;
+  }
+
+  .name-text-container {
+    padding-bottom: 50px;
+  }
+
+  .fsd-text,
+  .name-text,
+  .header-right-bottom,
+  .title-services,
+  .card-title,
+  .title-portofolio {
+    font-size: 24px;
+    text-align: start;
+  }
+
+  .desc-text,
+  .lets-talk,
+  .header-right,
+  .card-text,
+  .see-all,
+  .contact-me {
+    font-size: 16px;
+    text-align: start;
+  }
+
+  .slider {
+    height: 70px;
+    margin-top: 30px;
+    padding: 30px 0px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .my-img {
+    width: 300px;
+    height: 400px;
+  }
+
+  .left {
+    width: 300px;
+    height: 400px;
+  }
+
+  /* Adjust the size of the SVGs within the owl-carousel */
+  .owl-carousel svg {
+    width: 50px;
+    height: 57px;
+  }
+
+  .left,
+  .left2,
+  .img-contact,
+  .right,
+  .right2,
+  .circle {
+    display: none;
+  }
+
+  .services {
+    margin-top: 30px;
+  }
+
+  .card-service {
+    padding: 16px 0px 16px 16px;
+  }
+
+  .my-portofolio {
+    margin-top: 30px;
+    padding: 16px 16px 0px 16px;
+    border-radius: 6px;
+  }
+
+  .portofolio-box,
+  .cert-box {
+    margin-bottom: 1rem;
+  }
+
+  .portofolio-content {
+    padding: 10px 4% 10px 4%;
+  }
+
+  .portofolio-content .p-more {
+    font-size: 0.8rem;
+    color: #868490;
+  }
+
+  .portofolio-content .p-like {
+    font-size: 1rem;
+    color: #F8E7A1;
+    float: right;
+    margin-top: -35px;
+  }
+
+  .p-title {
+    font-size: 18px;
+  }
+
+  .line-mf {
+    width: 60px;
+    height: 8px;
+    background-color: #F8E7A1;
+    margin: 0 auto;
+  }
+
+  .certificate,
+  .contact {
+    padding-top: 30px;
+  }
+
+  .title-certificate,
+  .title-contact {
+    font-size: 24px;
+  }
+
+  .title-contact {
+    padding-bottom: 30px;
+  }
+
+  .footer {
+    margin-top: 30px;
+    padding: 16px 0;
+  }
+
+  .connect-text {
+    font-size: 16px;
+    line-height: normal;
+  }
+
+  .flex-icon svg {
+    width: 30px;
+    /* Adjust this value as needed */
+    height: 30px;
+    /* Adjust this value as needed */
+  }
+
+  .copyright {
+    margin-bottom: 0.3rem;
+  }
+}
+
+/* Smartphone dalam mode landscape dan tablet kecil */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+  /* Gaya CSS untuk tampilan pada layar antara 576px dan 767px (misalnya smartphone dalam posisi landscape dan tablet kecil) */
+  .slider {
+    height: 70px;
+    margin-top: 30px;
+    padding: 30px 0px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .header {
+    padding-top: 30px;
+  }
+
+  .name-text-container {
+    padding-bottom: 55px;
+  }
+
+  .fsd-text,
+  .name-text {
+    font-size: 30px;
+  }
+
+  .header-right-bottom,
+  .card-title {
+    font-size: 24px;
+  }
+
+  .desc-text,
+  .lets-talk,
+  .header-right,
+  .card-text,
+  .see-all,
+  .contact-me {
+    font-size: 16px;
+  }
+
+  .line-mf {
+    width: 100px;
+    height: 8px;
+    background-color: #F8E7A1;
+    margin: 0 auto;
+  }
+
+  .my-img {
+    width: 300px;
+    height: 400px;
+  }
+
+  .left {
+    width: 300px;
+    height: 400px;
+  }
+
+  /* Adjust the size of the SVGs within the owl-carousel */
+  .owl-carousel svg {
+    width: 55px;
+    height: 60px;
+  }
+
+  .left,
+  .left2,
+  .img-contact,
+  .right,
+  .right2,
+  .circle {
+    display: none;
+  }
+
+  .services {
+    margin-top: 30px;
+  }
+
+  .card-service {
+    padding: 16px 0px 16px 16px;
+  }
+
+  .my-portofolio {
+    margin-top: 30px;
+    padding: 16px 16px 0px 16px;
+    border-radius: 6px;
+  }
+
+  .portofolio-box,
+  .cert-box {
+    margin-bottom: 1rem;
+  }
+
+  .portofolio-content {
+    padding: 10px 4% 10px 4%;
+  }
+
+  .portofolio-content .p-more {
+    font-size: 0.8rem;
+    color: #868490;
+  }
+
+  .portofolio-content .p-like {
+    font-size: 1rem;
+    color: #F8E7A1;
+    float: right;
+    margin-top: -35px;
+  }
+
+  .p-title {
+    font-size: 18px;
+  }
+
+  .certificate,
+  .contact {
+    padding-top: 30px;
+  }
+
+  .title-certificate,
+  .title-portofolio,
+  .title-services,
+  .title-services,
+  .title-contact {
+    font-size: 30px;
+  }
+
+  .title-contact {
+    padding-bottom: 30px;
+  }
+
+
+  .footer {
+    margin-top: 30px;
+    padding: 16px 0;
+  }
+
+  .connect-text {
+    font-size: 20px;
+    line-height: normal;
+  }
+
+  .flex-icon svg {
+    width: 24px;
+    /* Adjust this value as needed */
+    height: 24px;
+    /* Adjust this value as needed */
+  }
+
+  .copyright {
+    margin-bottom: 0.3rem;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  /* Gaya CSS untuk tampilan pada layar antara 768px dan 991px (misalnya tablet) */
+  .slider {
+    height: 100px;
+    margin-top: 45px;
+    padding: 30px 0px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .header {
+    padding-top: 45px;
+  }
+
+  .name-text-container {
+    padding-bottom: 70px;
+  }
+
+  .fsd-text,
+  .name-text,
+  .title-certificate,
+  .title-portofolio,
+  .title-services {
+    font-size: 40px;
+  }
+
+  .header-right-bottom {
+    font-size: 48px;
+  }
+
+  .header-right,
+  .card-title {
+    font-size: 24px;
+  }
+
+  .desc-text,
+  .lets-talk,
+  .card-text,
+  .see-all,
+  .contact-me {
+    font-size: 16px;
+  }
+
+  .line-mf {
+    width: 100px;
+    height: 8px;
+    background-color: #F8E7A1;
+    margin: 0 auto;
+  }
+
+  .my-img {
+    width: 300px;
+    height: 400px;
+  }
+
+  .left {
+    width: 300px;
+    height: 400px;
+  }
+
+  /* Adjust the size of the SVGs within the owl-carousel */
+  .owl-carousel svg {
+    width: 55px;
+    height: 63px;
+  }
+
+  .img-contact,
+  .circle {
+    display: none;
+  }
+
+  .services {
+    margin-top: 45px;
+  }
+
+  .card-service {
+    padding: 16px 0px 16px 16px;
+  }
+
+  .my-portofolio {
+    margin-top: 45px;
+    padding: 16px 16px 0px 16px;
+    border-radius: 6px;
+  }
+
+  .portofolio-box,
+  .cert-box {
+    margin-bottom: 1rem;
+  }
+
+  .portofolio-content {
+    padding: 10px 4% 10px 4%;
+  }
+
+  .portofolio-content .p-more {
+    font-size: 0.8rem;
+    color: #868490;
+  }
+
+  .portofolio-content .p-like {
+    font-size: 1rem;
+    color: #F8E7A1;
+    float: right;
+    margin-top: -35px;
+  }
+
+  .p-title {
+    font-size: 18px;
+  }
+
+  .certificate,
+  .contact {
+    padding-top: 45px;
+  }
+
+  .left2 {
+    width: 300px;
+    height: 300px;
+  }
+
+  .title-contact {
+    font-size: 30px;
+    padding-bottom: 30px;
+  }
+
+  .footer {
+    margin-top: 30px;
+    padding: 16px 0;
+  }
+
+  .connect-text {
+    font-size: 18px;
+    line-height: normal;
+  }
+
+  .flex-icon svg {
+    width: 40px;
+    /* Adjust this value as needed */
+    height: 40px;
+    /* Adjust this value as needed */
+  }
+
+  .copyright {
+    margin-bottom: 0.3rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+  /* Gaya CSS untuk tampilan pada layar antara 992px dan 1199px (misalnya desktop) */
+  .header {
+    padding-top: 40px;
+  }
+
+  .name-text-container {
+    padding-bottom: 70px;
+  }
+
+  .name-text {
+    font-size: 42px;
+  }
+
+  .fsd-text {
+    font-size: 28px;
+  }
+
+  .desc-text {
+    font-size: 16px;
+  }
+
+  .slider {
+    height: 120px;
+    margin-top: 60px;
+    padding: 30px 10px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .title-services,
+  .title-portofolio,
+  .title-certificate,
+  .title-contact {
+    font-size: 30px;
+  }
+
+  .card-title {
+    font-size: 24px;
+  }
+
+  .lets-talk,
+  .card-text,
+  .see-all,
+  .contact-me {
+    font-size: 18px;
+  }
+
+  .header-right {
+    font-size: 24px;
+  }
+
+  .header-right-bottom {
+    font-size: 48px;
+  }
+
+  .my-img {
+    width: 300px;
+    height: 400px;
+  }
+
+  .left {
+    width: 300px;
+    height: 400px;
+  }
+
+  /* Adjust the size of the SVGs within the owl-carousel */
+  .owl-carousel svg {
+    width: 70px;
+    height: 80px;
+  }
+
+  .circle {
+    display: none;
+  }
+
+  .services {
+    margin-top: 60px;
+  }
+
+  .card-service {
+    padding: 24px 0px 24px 24px;
+  }
+
+  .my-portofolio {
+    margin-top: 60px;
+    padding: 16px 16px 0px 16px;
+    border-radius: 6px;
+  }
+
+
+  .line-mf {
+    width: 120px;
+  }
+
+  .portofolio-box,
+  .cert-box {
+    margin-bottom: 1rem;
+  }
+
+  .portofolio-content {
+    padding: 10px 4% 10px 4%;
+  }
+
+  .portofolio-content .p-more {
+    font-size: 0.8rem;
+    color: #868490;
+  }
+
+  .portofolio-content .p-like {
+    font-size: 1rem;
+    color: #F8E7A1;
+    float: right;
+    margin-top: 25px;
+  }
+
+  .p-title {
+    font-size: 18px;
+  }
+
+  .certificate,
+  .contact {
+    z-index: 1;
+    padding-top: 60px;
+  }
+
+  .img-contact {
+    width: 400px;
+    height: 400px;
+  }
+
+  .left2 {
+    width: 300px;
+    height: 400px;
+  }
+
+  .footer {
+    margin-top: 60px;
+    padding: 16px 0;
+  }
+
+  .connect-text {
+    font-size: 20px;
+    line-height: normal;
+  }
+
+  .flex-icon svg {
+    width: 48px;
+    /* Adjust this value as needed */
+    height: 48px;
+    /* Adjust this value as needed */
+  }
+
+  .copyright {
+    margin-bottom: 0.3rem;
+  }
+}
+
+/* Desktop Lebar / Monitor Besar */
+@media (min-width: 1200px) {
+  /* Gaya CSS untuk tampilan pada layar dengan lebar minimal 1200px (misalnya monitor besar) */
 }
