@@ -21,6 +21,7 @@ const portfolioItems = [
     title: "FIL.MI",
     category: "Website Streaming",
     date: "18 Jan. 2019",
+    urlLink: "https://github.com/taunur/PlatformStreaming",
   },
   {
     id: 2,
@@ -28,6 +29,7 @@ const portfolioItems = [
     title: "Travnur",
     category: "Webiste Travel",
     date: "18 Des. 2019",
+    urlLink: "https://github.com/taunur/Travnur",
   },
   {
     id: 3,
@@ -35,6 +37,7 @@ const portfolioItems = [
     title: "E-Mon",
     category: "Website Monitoring",
     date: "18 Sep. 2020",
+    urlLink: "https://github.com/taunur/E-MON",
   },
   {
     id: 4,
@@ -42,6 +45,7 @@ const portfolioItems = [
     title: "MU-ON",
     category: "Aplikasi Musik",
     date: "18 Des. 2021",
+    urlLink: "https://github.com/taunur/Flutter_Mu-On_App",
   },
   {
     id: 5,
@@ -49,6 +53,7 @@ const portfolioItems = [
     title: "Distro 66",
     category: "Website E-commerce",
     date: "27 Jun. 2022",
+    urlLink: "https://github.com/taunur/final-project-distro66",
   },
   {
     id: 6,
@@ -56,6 +61,7 @@ const portfolioItems = [
     title: "HKBP",
     category: "Aplikasi Ibadah",
     date: "18 Sep. 2022",
+    urlLink: "https://github.com/taunur/hkbp_app_ui",
   },
   {
     id: 7,
@@ -63,6 +69,7 @@ const portfolioItems = [
     title: "DCS Production",
     category: "Aplikasi Monitoring",
     date: "23 Des. 2022",
+    urlLink: "https://github.com/taunur/summary-monitoring-app",
   },
   {
     id: 8,
@@ -70,6 +77,7 @@ const portfolioItems = [
     title: "SPK",
     category: "Website SPK",
     date: "10 Jul. 2023",
+    urlLink: "https://github.com/taunur/SPK-Kombinasi-AHP-dan-SAW-Laravel-9",
   },
   {
     id: 9,
@@ -77,6 +85,7 @@ const portfolioItems = [
     title: "Shamo Web",
     category: "Website E-comerce",
     date: "19 Aug. 2023",
+    urlLink: "https://github.com/taunur/shamo-backend",
   },
   {
     id: 10,
@@ -84,6 +93,7 @@ const portfolioItems = [
     title: "Shamo App",
     category: "Aplikasi E-comerce",
     date: "19 Aug. 2023",
+    urlLink: "https://github.com/taunur/shamo-app",
   },
   {
     id: 11,
@@ -91,6 +101,7 @@ const portfolioItems = [
     title: "Hotelio",
     category: "Aplikasi Booking",
     date: "25 Aug. 2023",
+    urlLink: "https://github.com/taunur/hotelio-app",
   },
 ];
 
@@ -152,7 +163,7 @@ export default function PortofolioD() {
           {portfolioItems.map((item) => (
             <div className="col-md-4" key={item.id}>
               <div className="card shadow-sm portofolio-box">
-                <Link href={item.imageSrc} data-gallery="portfolioGallery">
+                <a href={item.imageSrc} data-gallery="portfolioGallery">
                   <div className="portofolio-img">
                     <img
                       src={item.imageSrc}
@@ -160,7 +171,7 @@ export default function PortofolioD() {
                       className="img-fluid"
                     />
                   </div>
-                </Link>
+                </a>
                 <div className="portofolio-content">
                   <div className="row">
                     <div className="col-sm-8">
@@ -172,7 +183,7 @@ export default function PortofolioD() {
                     </div>
                     <div className="col-sm-4">
                       <div className="p-like">
-                        <Link href="#">
+                        <Link to="#">
                           <FontAwesomeIcon icon={faEye} />
                           <i className="fa-solid fa-eye"></i>
                         </Link>

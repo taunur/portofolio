@@ -20,15 +20,18 @@ function Header() {
           </div>
           <div className="line-height"></div>
           <p className="desc-text mt-3 fw-normal">
-            Pekenalkan saya <b>Taufik Nurrahman</b>. Biasa dipanggil
-            <b>Taufik</b>, Saya seorang <b>Full-Stack developer</b> memliki
-            kemampuan dalam perancangan aplikasi, desain aplikasi dan pembuatan
-            aplikasi. Saya suka mempelajari sesuatu yang baru dalam hidup saya,
-            terutama tentang UI UX Designer, Website developer, dan Mobile
-            developer.
+            Let me introduce myself, my name is <b>Taufik Nurrahman</b>. Usually
+            called <b>Taufik</b>, I am a <b>Full-Stack developer</b> with
+            ability in application planning, application design and application
+            development. I like to learn something new in my life, especially
+            about UI UX designer, website developer and mobile developer.
           </p>
           <div className="mb-3">
-            <a href="CV_Taufik-Nurrahman.pdf" className="lets-talk">
+            <a
+              href="CV_Taufik-Nurrahman.pdf"
+              target="_blank"
+              className="lets-talk"
+            >
               Get CV
               <FontAwesomeIcon
                 icon={faAngleDoubleRight}

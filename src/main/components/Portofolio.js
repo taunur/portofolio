@@ -16,6 +16,7 @@ const portfolioItems = [
     title: "FIL.MI",
     category: "Website Streaming",
     date: "18 Jan. 2019",
+    urlLink: "https://github.com/taunur/PlatformStreaming",
   },
   {
     id: 2,
@@ -23,6 +24,7 @@ const portfolioItems = [
     title: "Travnur",
     category: "Webiste Travel",
     date: "18 Des. 2019",
+    urlLink: "https://github.com/taunur/Travnur",
   },
   {
     id: 3,
@@ -30,6 +32,7 @@ const portfolioItems = [
     title: "E-Mon",
     category: "Website Monitoring",
     date: "18 Sep. 2020",
+    urlLink: "https://github.com/taunur/E-MON",
   },
   {
     id: 4,
@@ -37,6 +40,7 @@ const portfolioItems = [
     title: "MU-ON",
     category: "Aplikasi Musik",
     date: "18 Des. 2021",
+    urlLink: "https://github.com/taunur/Flutter_Mu-On_App",
   },
   {
     id: 5,
@@ -44,6 +48,7 @@ const portfolioItems = [
     title: "Distro 66",
     category: "Website E-commerce",
     date: "27 Jun. 2022",
+    urlLink: "https://github.com/taunur/final-project-distro66",
   },
   {
     id: 6,
@@ -51,6 +56,7 @@ const portfolioItems = [
     title: "HKBP",
     category: "Aplikasi Ibadah",
     date: "18 Sep. 2022",
+    urlLink: "https://github.com/taunur/hkbp_app_ui",
   },
 ];
 
@@ -119,7 +125,7 @@ export default function Portofolio() {
           {portfolioItems.map((item) => (
             <div className="col-md-4" key={item.id}>
               <div className="card shadow-sm portofolio-box">
-                <Link href={item.imageSrc} data-gallery="portfolioGallery">
+                <a href={item.imageSrc} data-gallery="portfolioGallery">
                   <div className="portofolio-img">
                     <img
                       src={item.imageSrc}
@@ -127,7 +133,7 @@ export default function Portofolio() {
                       className="img-fluid"
                     />
                   </div>
-                </Link>
+                </a>
                 <div className="portofolio-content">
                   <div className="row">
                     <div className="col-sm-8">
@@ -139,9 +145,9 @@ export default function Portofolio() {
                     </div>
                     <div className="col-sm-4">
                       <div className="p-like">
-                        <Link href="#">
+                        <Link to={item.urlLink} target="_blank">
                           <FontAwesomeIcon icon={faEye} />
-                          <i className="fa-solid fa-eye"></i>
+                          <i className="fa-solid fa-eye "></i>
                         </Link>
                       </div>
                     </div>
