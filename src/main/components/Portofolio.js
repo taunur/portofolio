@@ -1,6 +1,6 @@
 import React from "react";
 import Project1 from "../../assets/images/portofolio/project-1.png";
-import Project2 from "../../assets/images/portofolio/project-2.1.png";
+import Project2 from "../../assets/images/portofolio/project-2.png";
 import Project3 from "../../assets/images/portofolio/project-3.png";
 import Project4 from "../../assets/images/portofolio/project-4.png";
 import Project5 from "../../assets/images/portofolio/project-5.png";
@@ -117,7 +117,13 @@ export default function Portofolio() {
       <div className="container">
         <div className="row g-0 align-items-center mb-3">
           <h1 className="title-portofolio col">My Portofolio</h1>
-          <Link to="/detail" className="see-all fw-normal col text-end">
+          <Link
+            to="/detail"
+            onClick={() => {
+              window.location.href = "/detail";
+            }}
+            className="see-all fw-normal col text-end"
+          >
             See All
             <FontAwesomeIcon icon={faArrowRight} beatFade className="mx-2" />
           </Link>

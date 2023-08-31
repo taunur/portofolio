@@ -1,6 +1,6 @@
 import React from "react";
 import Project1 from "../../assets/images/portofolio/project-1.png";
-import Project2 from "../../assets/images/portofolio/project-2.1.png";
+import Project2 from "../../assets/images/portofolio/project-2.png";
 import Project3 from "../../assets/images/portofolio/project-3.png";
 import Project4 from "../../assets/images/portofolio/project-4.png";
 import Project5 from "../../assets/images/portofolio/project-5.png";
