@@ -51,11 +51,10 @@ export default function Services() {
         <div className="col-lg-4">
           <h1 className="title-services fw-normal">My Awesome Service</h1>
           <p className="desc-text fw-normal">
-            Saya dapat menghasilkan situs web responsif, aplikasi mobile
-            kreatif, dan antarmuka pengguna yang menarik, memastikan solusi
-            teknologi yang holistik dan inovatif bagi klien. Dengan fokus pada
-            ketiga aspek ini bertujuan untuk memberikan pengalaman yang unggul
-            kepada pengguna.
+            I can produce responsive websites, creative mobile applications, and
+            engaging user interfaces, ensuring holistic and innovative
+            technological solutions for clients. With a focus on these three
+            aspects, my goal is to deliver an excellent user experience.
           </p>
         </div>
         <div className="col-lg-7 offset-lg-1">

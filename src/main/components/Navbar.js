@@ -49,6 +49,56 @@ function Navbar() {
 
   return (
     <div className={`container-fluid ${navbarFixed ? "fixed-top" : ""}`}>
+      <svg
+        className="right"
+        xmlns="http://www.w3.org/2000/svg"
+        width="1087"
+        height="626"
+        viewBox="0 0 1087 626"
+        fill="none"
+      >
+        <g filter="url(#filter0_f_16_2154)">
+          <path
+            d="M228.5 128.5C98.8998 125.7 112.5 42.3333 135.5 1V-51L1152.5 -89C1168.67 90.3333 1191.3 436.6 1152.5 387C1104 325 821.5 442.5 687 497.5C552.5 552.5 611.5 318 604.5 242.5C597.5 167 390.5 132 228.5 128.5Z"
+            fill="url(#paint0_linear_16_2154)"
+            fillOpacity="0.9"
+          />
+        </g>
+        <defs>
+          <filter
+            id="filter0_f_16_2154"
+            x="0.541016"
+            y="-209"
+            width="1293.38"
+            height="834.771"
+            filterUnits="userSpaceOnUse"
+            colorInterpolationFilters="sRGB"
+          >
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="BackgroundImageFix"
+              result="shape"
+            />
+            <feGaussianBlur
+              stdDeviation="60"
+              result="effect1_foregroundBlur_16_2154"
+            />
+          </filter>
+          <linearGradient
+            id="paint0_linear_16_2154"
+            x1="647.232"
+            y1="-89"
+            x2="647.232"
+            y2="505.771"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stopColor="#2F45BC" />
+            <stop offset="1" stopColor="#2FBCBC" stopOpacity="0" />
+          </linearGradient>
+        </defs>
+      </svg>
       <nav
         className={`navbar navbar-expand-lg ${navbarFixed ? "scrolled" : ""}`}
         id="navbar-top"

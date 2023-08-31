@@ -10,6 +10,8 @@ import Project8 from "../../assets/images/portofolio/project-8.png";
 import Project9 from "../../assets/images/portofolio/project-9.png";
 import Project10 from "../../assets/images/portofolio/project-10.png";
 import Project11 from "../../assets/images/portofolio/project-11.png";
+import Project12 from "../../assets/images/portofolio/project-12.png";
+import Project13 from "../../assets/images/portofolio/project-13.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
@@ -20,84 +22,101 @@ const portfolioItems = [
     imageSrc: Project1,
     title: "FIL.MI",
     category: "Website Streaming",
-    date: "18 Jan. 2019",
+    date: "6 Jan. 2021",
     urlLink: "https://github.com/taunur/PlatformStreaming",
   },
   {
     id: 2,
     imageSrc: Project2,
-    title: "Travnur",
-    category: "Webiste Travel",
-    date: "18 Des. 2019",
-    urlLink: "https://github.com/taunur/Travnur",
+    title: "Jurusan TIf",
+    category: "Desktop Publishing",
+    date: "21 Apr. 2021",
+    urlLink:
+      "https://github.com/taunur/Desktop-publishing-application-Jurusan-Teknik-Informatika",
   },
   {
     id: 3,
     imageSrc: Project3,
-    title: "E-Mon",
-    category: "Website Monitoring",
-    date: "18 Sep. 2020",
-    urlLink: "https://github.com/taunur/E-MON",
+    title: "3D Animation",
+    category: "Desktop Animasi",
+    date: "6 Jun. 2021",
+    urlLink: "https://github.com/taunur/Grafkom-UAS-Java-3D",
   },
   {
     id: 4,
     imageSrc: Project4,
+    title: "E-Mon",
+    category: "Website Monitoring",
+    date: "18 Jun. 2021",
+    urlLink: "https://github.com/taunur/E-MON",
+  },
+  {
+    id: 5,
+    imageSrc: Project5,
+    title: "Travnur",
+    category: "Webiste Travel",
+    date: "22 Des. 2021",
+    urlLink: "https://github.com/taunur/Travnur",
+  },
+  {
+    id: 6,
+    imageSrc: Project6,
     title: "MU-ON",
     category: "Aplikasi Musik",
     date: "18 Des. 2021",
     urlLink: "https://github.com/taunur/Flutter_Mu-On_App",
   },
   {
-    id: 5,
-    imageSrc: Project5,
+    id: 7,
+    imageSrc: Project7,
     title: "Distro 66",
     category: "Website E-commerce",
     date: "27 Jun. 2022",
     urlLink: "https://github.com/taunur/final-project-distro66",
   },
   {
-    id: 6,
-    imageSrc: Project6,
+    id: 8,
+    imageSrc: Project8,
     title: "HKBP",
     category: "Aplikasi Ibadah",
-    date: "18 Sep. 2022",
+    date: "18 Mei. 2022",
     urlLink: "https://github.com/taunur/hkbp_app_ui",
   },
   {
-    id: 7,
-    imageSrc: Project7,
+    id: 9,
+    imageSrc: Project9,
     title: "DCS Production",
     category: "Aplikasi Monitoring",
     date: "23 Des. 2022",
     urlLink: "https://github.com/taunur/summary-monitoring-app",
   },
   {
-    id: 8,
-    imageSrc: Project8,
+    id: 10,
+    imageSrc: Project10,
     title: "SPK",
     category: "Website SPK",
     date: "10 Jul. 2023",
     urlLink: "https://github.com/taunur/SPK-Kombinasi-AHP-dan-SAW-Laravel-9",
   },
   {
-    id: 9,
-    imageSrc: Project9,
+    id: 11,
+    imageSrc: Project11,
     title: "Shamo Web",
     category: "Website E-comerce",
-    date: "19 Aug. 2023",
+    date: "17 Aug. 2023",
     urlLink: "https://github.com/taunur/shamo-backend",
   },
   {
-    id: 10,
-    imageSrc: Project10,
+    id: 12,
+    imageSrc: Project12,
     title: "Shamo App",
     category: "Aplikasi E-comerce",
-    date: "19 Aug. 2023",
+    date: "20 Aug. 2023",
     urlLink: "https://github.com/taunur/shamo-app",
   },
   {
-    id: 11,
-    imageSrc: Project11,
+    id: 13,
+    imageSrc: Project13,
     title: "Hotelio",
     category: "Aplikasi Booking",
     date: "25 Aug. 2023",
@@ -183,7 +202,7 @@ export default function PortofolioD() {
                     </div>
                     <div className="col-sm-4">
                       <div className="p-like">
-                        <Link to="#">
+                        <Link to={item.urlLink}>
                           <FontAwesomeIcon icon={faEye} />
                           <i className="fa-solid fa-eye"></i>
                         </Link>

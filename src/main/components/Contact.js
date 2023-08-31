@@ -1,5 +1,7 @@
 import React from "react";
 import imgContact from "../../assets/images/img-contact.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons";
 
 function Contact() {
   return (
@@ -50,6 +52,11 @@ function Contact() {
             </h1>
             <a href="https://wa.me/6281355538777" className="contact-me">
               <span className="span-underline">Contact Me</span>
+              <FontAwesomeIcon
+                icon={faAngleDoubleRight}
+                beatFade
+                className="mx-2"
+              />
               <i className="fa-solid fa-angles-right fa-beat-fade mx-2"></i>
             </a>
           </div>
