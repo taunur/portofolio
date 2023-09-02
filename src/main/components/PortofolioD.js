@@ -7,7 +7,7 @@ import Project5 from "../../assets/images/portofolio/project-5.png";
 import Project6 from "../../assets/images/portofolio/project-6.png";
 import Project7 from "../../assets/images/portofolio/project-7.png";
 import Project8 from "../../assets/images/portofolio/project-8.png";
-import Project9 from "../../assets/images/portofolio/project-9.1.png";
+import Project9 from "../../assets/images/portofolio/project-9.png";
 import Project10 from "../../assets/images/portofolio/project-10.png";
 import Project11 from "../../assets/images/portofolio/project-11.png";
 import Project12 from "../../assets/images/portofolio/project-12.png";
