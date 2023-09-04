@@ -46,18 +46,18 @@ const portfolioItems = [
   {
     id: 5,
     imageSrc: Project5,
-    title: "Travnur",
-    category: "Webiste Travel",
-    date: "22 Des. 2021",
-    urlLink: "https://github.com/taunur/Travnur",
+    title: "MU-ON",
+    category: "Aplikasi Musik",
+    date: "19 Des. 2021",
+    urlLink: "https://github.com/taunur/Flutter_Mu-On_App",
   },
   {
     id: 6,
     imageSrc: Project6,
-    title: "MU-ON",
-    category: "Aplikasi Musik",
-    date: "18 Des. 2021",
-    urlLink: "https://github.com/taunur/Flutter_Mu-On_App",
+    title: "Travnur",
+    category: "Webiste Travel",
+    date: "22 Des. 2021",
+    urlLink: "https://github.com/taunur/Travnur",
   },
 ];
 

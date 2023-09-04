@@ -26,7 +26,7 @@ function Header() {
             development. I like to learn something new in my life, especially
             about UI UX designer, website developer and mobile developer.
           </p>
-          <div className="mb-3">
+          <div className="mb-3 col">
             <a
               href="CV_Taufik-Nurrahman.pdf"
               target="_blank"

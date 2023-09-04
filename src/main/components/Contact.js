@@ -50,7 +50,7 @@ function Contact() {
             <h1 className="title-contact">
               Want to make awesome and impactful Product?
             </h1>
-            <a href="https://wa.me/6281355538777" className="contact-me">
+            <a href="https://wa.me/6282332905662" className="contact-me">
               <span className="span-underline">Contact Me</span>
               <FontAwesomeIcon
                 icon={faAngleDoubleRight}
