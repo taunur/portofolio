@@ -1,65 +1,9 @@
 import React from "react";
-import Project1 from "../../assets/images/portofolio/project-1.png";
-import Project2 from "../../assets/images/portofolio/project-2.png";
-import Project3 from "../../assets/images/portofolio/project-3.png";
-import Project4 from "../../assets/images/portofolio/project-4.png";
-import Project5 from "../../assets/images/portofolio/project-5.png";
-import Project6 from "../../assets/images/portofolio/project-6.png";
+import PortfolioItem from "../helpers/PortfolioItem";
+import portfolioItems from "../data/DataPorto";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEye, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-
-const portfolioItems = [
-  {
-    id: 1,
-    imageSrc: Project1,
-    title: "FIL.MI",
-    category: "Website Streaming",
-    date: "6 Jan. 2021",
-    urlLink: "https://github.com/taunur/PlatformStreaming",
-  },
-  {
-    id: 2,
-    imageSrc: Project2,
-    title: "Jurusan TIf",
-    category: "Desktop Publishing",
-    date: "21 Apr. 2021",
-    urlLink:
-      "https://github.com/taunur/Desktop-publishing-application-Jurusan-Teknik-Informatika",
-  },
-  {
-    id: 3,
-    imageSrc: Project3,
-    title: "3D Animation",
-    category: "Desktop Animasi",
-    date: "6 Jun. 2021",
-    urlLink: "https://github.com/taunur/Grafkom-UAS-Java-3D",
-  },
-  {
-    id: 4,
-    imageSrc: Project4,
-    title: "E-Mon",
-    category: "Website Monitoring",
-    date: "18 Jun. 2021",
-    urlLink: "https://github.com/taunur/E-MON",
-  },
-  {
-    id: 5,
-    imageSrc: Project5,
-    title: "MU-ON",
-    category: "Aplikasi Musik",
-    date: "19 Des. 2021",
-    urlLink: "https://github.com/taunur/Flutter_Mu-On_App",
-  },
-  {
-    id: 6,
-    imageSrc: Project6,
-    title: "Travnur",
-    category: "Webiste Travel",
-    date: "22 Des. 2021",
-    urlLink: "https://github.com/taunur/Travnur",
-  },
-];
 
 export default function Portofolio() {
   return (
@@ -129,39 +73,8 @@ export default function Portofolio() {
           </Link>
         </div>
         <div className="row">
-          {portfolioItems.map((item) => (
-            <div className="col-md-4" key={item.id}>
-              <div className="card shadow-sm portofolio-box">
-                <a href={item.imageSrc} data-gallery="portfolioGallery">
-                  <div className="portofolio-img">
-                    <img
-                      src={item.imageSrc}
-                      alt={`project-${item.id}`}
-                      className="img-fluid"
-                    />
-                  </div>
-                </a>
-                <div className="portofolio-content">
-                  <div className="row">
-                    <div className="col-sm-8">
-                      <h2 className="p-title">{item.title}</h2>
-                      <div className="p-more">
-                        <span className="p-ctegory">{item.category}</span> /
-                        <span className="p-date">{item.date}</span>
-                      </div>
-                    </div>
-                    <div className="col-sm-4">
-                      <div className="p-like">
-                        <Link to={item.urlLink} target="_blank">
-                          <FontAwesomeIcon icon={faEye} />
-                          <i className="fa-solid fa-eye "></i>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          {portfolioItems.slice(0, 6).map((item) => (
+            <PortfolioItem key={item.id} item={item} showAll={false} />
           ))}
         </div>
       </div>

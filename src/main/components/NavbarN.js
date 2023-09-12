@@ -38,7 +38,13 @@ function NavbarN() {
         data-bs-theme="dark"
       >
         <div className="container">
-          <Link to="/" className="navbar-brand ms-0">
+          <Link
+            to="/"
+            onClick={() => {
+              window.location.href = "/";
+            }}
+            className="navbar-brand ms-0"
+          >
             <img src={LogoTaunur} alt="Logo Taunur" />
           </Link>
         </div>

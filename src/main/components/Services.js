@@ -46,7 +46,7 @@ export default function Services() {
   ];
 
   return (
-    <section className="services container">
+    <section id="services" className="services container">
       <div className="row justify-content-between">
         <div className="col-lg-4">
           <h1 className="title-services fw-normal">My Awesome Service</h1>

@@ -30,7 +30,7 @@ function Slider() {
   };
 
   return (
-    <section id="services" className="slider container-fluid">
+    <section className="slider container-fluid">
       {/* bg left */}
       <svg
         className="left"
@@ -669,7 +669,7 @@ function Slider() {
             viewBox="0 0 101 100"
             fill="none"
           >
-            <g clip-path="url(#clip0_180_1924)">
+            <g clipPath="url(#clip0_180_1924)">
               <path
                 d="M77.2148 0H24.0898C11.1457 0 0.652344 10.4933 0.652344 23.4375V76.5625C0.652344 89.5067 11.1457 100 24.0898 100H77.2148C90.159 100 100.652 89.5067 100.652 76.5625V23.4375C100.652 10.4933 90.159 0 77.2148 0Z"
                 fill="#F4F2ED"
