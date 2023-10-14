@@ -12,6 +12,7 @@ import Project11 from "../../assets/images/portofolio/project-11.png";
 import Project12 from "../../assets/images/portofolio/project-12.png";
 import Project13 from "../../assets/images/portofolio/project-13.png";
 import Project14 from "../../assets/images/portofolio/project-14.png";
+import Project15 from "../../assets/images/portofolio/project-15.png";
 
 const portfolioItems = [
   {
@@ -126,6 +127,14 @@ const portfolioItems = [
     category: "App UKC",
     date: "4 Sep. 2023",
     urlLink: "https://github.com/taunur/ukc-ship-calculator",
+  },
+  {
+    id: 15,
+    imageSrc: Project15,
+    title: "Money Record",
+    category: "App Record",
+    date: "27 Sep. 2023",
+    urlLink: "https://github.com/taunur/money-record-app",
   },
 ];
 
