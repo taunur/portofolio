@@ -13,6 +13,8 @@ import Project12 from "../../assets/images/portofolio/project-12.png";
 import Project13 from "../../assets/images/portofolio/project-13.png";
 import Project14 from "../../assets/images/portofolio/project-14.png";
 import Project15 from "../../assets/images/portofolio/project-15.png";
+import Project16 from "../../assets/images/portofolio/project-16.png";
+import Project17 from "../../assets/images/portofolio/project-17.png";
 
 const portfolioItems = [
   {
@@ -135,6 +137,22 @@ const portfolioItems = [
     category: "App Record",
     date: "27 Sep. 2023",
     urlLink: "https://github.com/taunur/money-record-app",
+  },
+  {
+    id: 16,
+    imageSrc: Project16,
+    title: "Restaurant",
+    category: "App Favorite",
+    date: "03 Jan. 2024",
+    urlLink: "https://github.com/taunur/restaurant_app",
+  },
+  {
+    id: 17,
+    imageSrc: Project17,
+    title: "Airplane",
+    category: "App Booking",
+    date: "12 Jan. 2024",
+    urlLink: "https://github.com/taunur/airplane-app",
   },
 ];
 
