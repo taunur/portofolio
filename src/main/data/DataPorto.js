@@ -15,6 +15,7 @@ import Project14 from "../../assets/images/portofolio/project-14.png";
 import Project15 from "../../assets/images/portofolio/project-15.png";
 import Project16 from "../../assets/images/portofolio/project-16.png";
 import Project17 from "../../assets/images/portofolio/project-17.png";
+import Project18 from "../../assets/images/portofolio/project-18.png";
 
 const portfolioItems = [
   {
@@ -153,6 +154,14 @@ const portfolioItems = [
     category: "App Booking",
     date: "12 Jan. 2024",
     urlLink: "https://github.com/taunur/airplane-app",
+  },
+  {
+    id: 18,
+    imageSrc: Project18,
+    title: "Flype",
+    category: "App Sosmed",
+    date: "15 Mar. 2024",
+    urlLink: "https://github.com/taunur/flype-app",
   },
 ];
 
